@@ -9,7 +9,17 @@ public class Test {
 		// Person p = new Person("Jhon", 1);
 		// System.out.println(p.greet());
 		// System.out.println(p.toString());
-
+		String[] employees = new String[3];
+		employees[0] = new Employee("Jhon", 1, 1000).toString();
+		employees[1] = new Employee("Jhon", 2, 1000).toString();
+		employees[2] = new Employee("Jhon", 3, 1000).toString();
+		for (String employee : employees) {
+			System.out.println(employee);
+		}
+		for ( int i=0; i<employees.length; i++) {
+			System.out.println(employees[i]);
+		}
+		System.out.println("---------");
 		Person someone = new Person("Jhon", 1);
 		System.out.println(someone);
 		String text = "Hello, my Im " + someone;
